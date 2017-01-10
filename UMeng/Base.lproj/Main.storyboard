@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ddR-1A-eIu">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="0HL-7h-b7q">
+            <objects>
+                <navigationController id="ddR-1A-eIu" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="T4P-KI-Ehf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="UtC-ff-rWr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bhc-u3-NT7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1142" y="367"/>
+        </scene>
+        <!--Feyddy的博客-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="im5-Rw-z86">
+                                <rect key="frame" x="20" y="64" width="560" height="420"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rlw-Vs-YeE">
+                                <rect key="frame" x="50" y="550" width="500" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="YcX-Em-nmX"/>
+                                </constraints>
+                                <state key="normal" title="分享该博客网站"/>
+                                <connections>
+                                    <action selector="shareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YEk-Mu-HTG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="im5-Rw-z86" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="64" id="2QJ-vd-SyY"/>
+                            <constraint firstItem="im5-Rw-z86" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="6BQ-R1-T3m"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="im5-Rw-z86" secondAttribute="bottom" constant="116" id="JuF-ga-6GO"/>
+                            <constraint firstItem="Rlw-Vs-YeE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="bz3-0r-5rP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="im5-Rw-z86" secondAttribute="trailing" id="dX3-km-Nqa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Rlw-Vs-YeE" secondAttribute="trailing" constant="30" id="hKX-Ff-8Sf"/>
+                            <constraint firstItem="Rlw-Vs-YeE" firstAttribute="top" secondItem="im5-Rw-z86" secondAttribute="bottom" constant="66" id="nBf-0f-FgT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Feyddy的博客" id="Rb3-Pv-eqS"/>
+                    <connections>
+                        <outlet property="feyddyBlogWeb" destination="im5-Rw-z86" id="jzI-zP-jbS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+</document>

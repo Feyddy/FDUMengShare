@@ -1,0 +1,31 @@
+PODS:
+  - PureLayout (3.0.2)
+  - TYAttributedLabel (2.6.2)
+  - UMengUShare/Core (6.1.2):
+    - UMengUShare/Network
+  - UMengUShare/Network (6.1.2)
+  - UMengUShare/Social/QQ (6.1.2):
+    - UMengUShare/Core
+  - UMengUShare/Social/Sina (6.1.2):
+    - UMengUShare/Core
+  - UMengUShare/Social/WeChat (6.1.2):
+    - UMengUShare/Core
+  - UMengUShare/UI (6.1.2):
+    - UMengUShare/Core
+
+DEPENDENCIES:
+  - PureLayout
+  - TYAttributedLabel (~> 2.6.2)
+  - UMengUShare/Social/QQ
+  - UMengUShare/Social/Sina
+  - UMengUShare/Social/WeChat
+  - UMengUShare/UI
+
+SPEC CHECKSUMS:
+  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+  TYAttributedLabel: 1c1f1e7604043ba584e005d4fd3aee8a1a7a2020
+  UMengUShare: b8c38579f8a4f2ce8dfb0c944cf868022a441bd3
+
+PODFILE CHECKSUM: 7c9cf9fec3863281aee1520c0b044ab89cf68b6c
+
+COCOAPODS: 1.0.1

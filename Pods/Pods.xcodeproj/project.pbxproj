@@ -1,0 +1,895 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00331FA7E1E687B7A7835D7C723C444A /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DCE56ED21290F4E3048A6BFFF3A1E6E /* NSLayoutConstraint+PureLayout.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		04D3CE71377608713C0A90DE8BC944B5 /* NSMutableAttributedString+TY.h in Headers */ = {isa = PBXBuildFile; fileRef = 050A681271422AD8E13A6D2051E26363 /* NSMutableAttributedString+TY.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B1567E94B1EB3FAD39238E355EFBFC5 /* TYTextContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7294DD376C516EEE1AC483E83DE86C /* TYTextContainer.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0B8F270F13A099128944B624E6D747DA /* NSArray+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FE82428193D62E193CEA97531B3E86C /* NSArray+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		135590377E856B3F36B8E9C293DB1AD5 /* TYImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = CFBB78CBFC210A1B2F38FCC6B78A7F8C /* TYImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28C61F70116932875DE10CBD4E24EEA6 /* TYTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 902E8623B1E107A899BDA20143A2C6C7 /* TYTextStorage.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		29315789901A2C553403A2F1C03490EA /* TYDrawStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = D8FA1AE1A79F98854FEFEB4D1F2443C0 /* TYDrawStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C1EE6393B85BAA439B379F7F151C6F0 /* TYDrawStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 502C79E03F9441ED912D122AB08B541E /* TYDrawStorage.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		33B94180319167899CE99D21193C29D5 /* TYAttributedLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 53062B6B0CB276909B033859CAE24BBA /* TYAttributedLabel-dummy.m */; };
+		39BC01838891B26418C71D5135AB1C72 /* TYLinkTextStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 55513BA83B2D95EAEB4C5D0795110930 /* TYLinkTextStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BFA25C5FF5DD686A317E954608250CF /* Pods-UMeng-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32007F94FE0B81AE3BDCCD213C81C9C6 /* Pods-UMeng-dummy.m */; };
+		5525052E44B9B4E3FAD5E808246219B1 /* NSMutableAttributedString+TY.m in Sources */ = {isa = PBXBuildFile; fileRef = 5995E6ED875C09CF5CEEAAE5386C53AD /* NSMutableAttributedString+TY.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		59928300769638A05B6DBCED5D00441E /* ALView+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = E4AE1E189E8C2304E564D0B5E872383D /* ALView+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B230049351797EB04265F7AB1AA9B76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		5D9394FD0191A393AE8C1EBF5CADCD66 /* TYImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BBF81DC4A2AC18C161198AFDB8FE378D /* TYImageCache.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		600E4917110D887A28442A4BD5851CF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		64EE74EBD30DDAE081254A1CEDA98625 /* TYViewStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B5D8B71D17855F65D9649386EEF966 /* TYViewStorage.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		6FF827D353DD2452D1E03C9A2C65E9FF /* TYTextStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 38397FA2728276F21CFA48E30C885FE1 /* TYTextStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D490F01B32147D498396516CDDB5706 /* TYAttributedLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AC5EDB09DEBEF42D44349147AFC652C /* TYAttributedLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		807E9FF4D310E17B52E6FA92BC3E0FBC /* TYTextStorageProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 30B024C56C3AEA55C55DC962C0135BD3 /* TYTextStorageProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85541C9D3F2E1A1D28D6C47380B23F03 /* TYTextContainer+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 0348B04265310CB72CF2B47D90C969B1 /* TYTextContainer+Extended.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8A2700FCC93D8E9E6E7385A2C1CA622D /* NSLayoutConstraint+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E691D8383E3F7C9A6EC5A64B563771E /* NSLayoutConstraint+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91919F417D1BF743FFF05C0561354CFC /* PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = AE0649191D2817A683372E56C70B2917 /* PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B8222C10D6D0B263F8C70B2ED117D10 /* PureLayoutDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BC3BA5F9D14A9B2061D4D49A04878FD /* PureLayoutDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9FED13E20781CE3CDFB52FF298510DF9 /* TYImageStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2FC952FF6CD4DEA6AC63B4786B4FF4 /* TYImageStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AEB0D94B0A365133493AB2ACD58AD271 /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D2E638962CC9AAF3C04415AA57E8F6 /* ALView+PureLayout.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B20605EFF70D6D8B84116D6829A33E62 /* PureLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0186E8AED4A09D2335BFEF1B1D0FD4 /* PureLayout-dummy.m */; };
+		BD10C128A745CADDA3589C269EF828A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		C03C769F7E2D6712E546031E8AF88E0C /* TYImageStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E8C873A538F7F771B8B5CC55540309 /* TYImageStorage.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		CBB49A4D7FC14C363936D37E997972CC /* TYViewStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 1746EEE291BC9C709B2B3966985E2CED /* TYViewStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6BC5E13DCDEC40C74224E3561545A91 /* TYTextContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = F7765E97761BFFDC99BE7B6C33419919 /* TYTextContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECDD6E5961E33AD627DC674ACAEF17C3 /* TYAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7E9F1A27FFC8DADC8D3C92620A6CC5 /* TYAttributedLabel.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F868C22554AEC60962015AF5BFD4EE7A /* TYLinkTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF208891A3E0A81C1A9AC864CC1F844 /* TYLinkTextStorage.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FD964A44123A3B63B53420799F280C64 /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 297539EEB44491A363B706B353D3FBDA /* NSArray+PureLayout.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FFEBD5548FCA1877D012A5B96B344C2D /* PureLayout+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 854B7CF91D3B31AC8B728D27B9388DD6 /* PureLayout+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		60F9252BDBE5A7287C4E82A181870382 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A2E3BFDEDD0EFF660EC171ACB5F9E95;
+			remoteInfo = TYAttributedLabel;
+		};
+		DD12D0E031A530B5FA1908B6A1604146 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D003C4C467802D7E32C33F869442C2B4;
+			remoteInfo = PureLayout;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0348B04265310CB72CF2B47D90C969B1 /* TYTextContainer+Extended.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "TYTextContainer+Extended.m"; path = "TYAttributedLabelDemo/TYAttributedLabel/TYTextContainer+Extended.m"; sourceTree = "<group>"; };
+		050A681271422AD8E13A6D2051E26363 /* NSMutableAttributedString+TY.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableAttributedString+TY.h"; path = "TYAttributedLabelDemo/TYAttributedLabel/NSMutableAttributedString+TY.h"; sourceTree = "<group>"; };
+		09E8C873A538F7F771B8B5CC55540309 /* TYImageStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TYImageStorage.m; path = TYAttributedLabelDemo/TYAttributedLabel/TYImageStorage.m; sourceTree = "<group>"; };
+		0FE82428193D62E193CEA97531B3E86C /* NSArray+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+PureLayout.h"; path = "PureLayout/PureLayout/NSArray+PureLayout.h"; sourceTree = "<group>"; };
+		149BF270B2396CDD80072BB753C4E54D /* UMSocialQQHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMSocialQQHandler.h; path = UShareSDK/SocialLibraries/QQ/UMSocialQQHandler.h; sourceTree = "<group>"; };
+		1746EEE291BC9C709B2B3966985E2CED /* TYViewStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYViewStorage.h; path = TYAttributedLabelDemo/TYAttributedLabel/TYViewStorage.h; sourceTree = "<group>"; };
+		20DEB198AD9D2ED5FA92D132F65A959D /* libWeiboSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libWeiboSDK.a; path = UShareSDK/SocialLibraries/Sina/libWeiboSDK.a; sourceTree = "<group>"; };
+		221A3ABE825F1EFB642588B0EBBB6370 /* WXApi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApi.h; path = UShareSDK/SocialLibraries/WeChat/WXApi.h; sourceTree = "<group>"; };
+		26F36768BDBB02775478D35D8A3D3C9E /* WBSDKBasicButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBSDKBasicButton.h; path = UShareSDK/SocialLibraries/Sina/WBSDKBasicButton.h; sourceTree = "<group>"; };
+		297539EEB44491A363B706B353D3FBDA /* NSArray+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+PureLayout.m"; path = "PureLayout/PureLayout/NSArray+PureLayout.m"; sourceTree = "<group>"; };
+		2BDF4663A474B32FB76FBC093234B7DD /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TencentOpenAPI.framework; path = UShareSDK/SocialLibraries/QQ/TencentOpenAPI.framework; sourceTree = "<group>"; };
+		30B024C56C3AEA55C55DC962C0135BD3 /* TYTextStorageProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYTextStorageProtocol.h; path = TYAttributedLabelDemo/TYAttributedLabel/TYTextStorageProtocol.h; sourceTree = "<group>"; };
+		30B5D8B71D17855F65D9649386EEF966 /* TYViewStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TYViewStorage.m; path = TYAttributedLabelDemo/TYAttributedLabel/TYViewStorage.m; sourceTree = "<group>"; };
+		32007F94FE0B81AE3BDCCD213C81C9C6 /* Pods-UMeng-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UMeng-dummy.m"; sourceTree = "<group>"; };
+		38397FA2728276F21CFA48E30C885FE1 /* TYTextStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYTextStorage.h; path = TYAttributedLabelDemo/TYAttributedLabel/TYTextStorage.h; sourceTree = "<group>"; };
+		3BC3BA5F9D14A9B2061D4D49A04878FD /* PureLayoutDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayoutDefines.h; path = PureLayout/PureLayout/PureLayoutDefines.h; sourceTree = "<group>"; };
+		4022D940EE78A31D390CAEE052BC4B73 /* WeiboUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WeiboUser.h; path = UShareSDK/SocialLibraries/Sina/WeiboUser.h; sourceTree = "<group>"; };
+		45256FCBCDAE9E8291D4800E2CC419DD /* UMSocialCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UMSocialCore.framework; path = UShareSDK/UMSocialSDK/UMSocialCore.framework; sourceTree = "<group>"; };
+		46B96BA483682BCC278D81B9B4447DEB /* UMSocialNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UMSocialNetwork.framework; path = UShareSDK/UMSocialSDK/UMSocialNetwork.framework; sourceTree = "<group>"; };
+		487880009117F0DB27E821C7ECAFACC3 /* libPureLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libPureLayout.a; path = libPureLayout.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AF68F2C0A45A9089A8E5905BD8CB855 /* WeiboSDK+Statistics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WeiboSDK+Statistics.h"; path = "UShareSDK/SocialLibraries/Sina/WeiboSDK+Statistics.h"; sourceTree = "<group>"; };
+		502C79E03F9441ED912D122AB08B541E /* TYDrawStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TYDrawStorage.m; path = TYAttributedLabelDemo/TYAttributedLabel/TYDrawStorage.m; sourceTree = "<group>"; };
+		526B8AE47E91A9A214F591765A67FA3D /* libTYAttributedLabel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libTYAttributedLabel.a; path = libTYAttributedLabel.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		52AE9A87E618A901FE651C1601BB59DB /* PureLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-prefix.pch"; sourceTree = "<group>"; };
+		53062B6B0CB276909B033859CAE24BBA /* TYAttributedLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TYAttributedLabel-dummy.m"; sourceTree = "<group>"; };
+		540024EBD6E27F47A7B4C0047AF3818F /* WeiboSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WeiboSDK.h; path = UShareSDK/SocialLibraries/Sina/WeiboSDK.h; sourceTree = "<group>"; };
+		55513BA83B2D95EAEB4C5D0795110930 /* TYLinkTextStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYLinkTextStorage.h; path = TYAttributedLabelDemo/TYAttributedLabel/TYLinkTextStorage.h; sourceTree = "<group>"; };
+		5995E6ED875C09CF5CEEAAE5386C53AD /* NSMutableAttributedString+TY.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableAttributedString+TY.m"; path = "TYAttributedLabelDemo/TYAttributedLabel/NSMutableAttributedString+TY.m"; sourceTree = "<group>"; };
+		5A7EA1A658DC48F31CF99501F2BCA7AC /* Pods-UMeng-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UMeng-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6696D51CDA39D480A76CF53739B6797B /* Pods-UMeng.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UMeng.debug.xcconfig"; sourceTree = "<group>"; };
+		6ABBBE167F5488E26D88D34797E14D5D /* UShareUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UShareUI.framework; path = UShareSDK/UMSocialUI/UShareUI.framework; sourceTree = "<group>"; };
+		6E691D8383E3F7C9A6EC5A64B563771E /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+PureLayout.h"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
+		6F0186E8AED4A09D2335BFEF1B1D0FD4 /* PureLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PureLayout-dummy.m"; sourceTree = "<group>"; };
+		707EC861E654A81801B0FDF8608FB267 /* libSocialQQ.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libSocialQQ.a; path = UShareSDK/SocialLibraries/QQ/libSocialQQ.a; sourceTree = "<group>"; };
+		74D155F7EBE3C9E6C87E149AF7F2800A /* WXApiObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApiObject.h; path = UShareSDK/SocialLibraries/WeChat/WXApiObject.h; sourceTree = "<group>"; };
+		75A069DC5C731BD66FE2DD1F3F99F292 /* WBHttpRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBHttpRequest.h; path = UShareSDK/SocialLibraries/Sina/WBHttpRequest.h; sourceTree = "<group>"; };
+		763BC4C0750114565BDC1DED4A3C0BD6 /* libWeChatSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libWeChatSDK.a; path = UShareSDK/SocialLibraries/WeChat/libWeChatSDK.a; sourceTree = "<group>"; };
+		7AC5EDB09DEBEF42D44349147AFC652C /* TYAttributedLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYAttributedLabel.h; path = TYAttributedLabelDemo/TYAttributedLabel/TYAttributedLabel.h; sourceTree = "<group>"; };
+		7AD471BDB5B7B4979E84166B9BF34A76 /* TYAttributedLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TYAttributedLabel-prefix.pch"; sourceTree = "<group>"; };
+		7D4AD941368F76DE81A0D1BE3FCD21FB /* WBHttpRequest+WeiboShare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WBHttpRequest+WeiboShare.h"; path = "UShareSDK/SocialLibraries/Sina/WBHttpRequest+WeiboShare.h"; sourceTree = "<group>"; };
+		806C47D2A28C0DD9C63B2BFDBC9FC437 /* WBHttpRequest+WeiboUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WBHttpRequest+WeiboUser.h"; path = "UShareSDK/SocialLibraries/Sina/WBHttpRequest+WeiboUser.h"; sourceTree = "<group>"; };
+		854B7CF91D3B31AC8B728D27B9388DD6 /* PureLayout+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PureLayout+Internal.h"; path = "PureLayout/PureLayout/PureLayout+Internal.h"; sourceTree = "<group>"; };
+		88F8BE0B24287BECA629E939AEE1D149 /* WBHttpRequest+WeiboGame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WBHttpRequest+WeiboGame.h"; path = "UShareSDK/SocialLibraries/Sina/WBHttpRequest+WeiboGame.h"; sourceTree = "<group>"; };
+		902E8623B1E107A899BDA20143A2C6C7 /* TYTextStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TYTextStorage.m; path = TYAttributedLabelDemo/TYAttributedLabel/TYTextStorage.m; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		952DB751B02C1140399D014B3E9F954F /* Pods-UMeng-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UMeng-frameworks.sh"; sourceTree = "<group>"; };
+		9AF208891A3E0A81C1A9AC864CC1F844 /* TYLinkTextStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TYLinkTextStorage.m; path = TYAttributedLabelDemo/TYAttributedLabel/TYLinkTextStorage.m; sourceTree = "<group>"; };
+		9D7294DD376C516EEE1AC483E83DE86C /* TYTextContainer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TYTextContainer.m; path = TYAttributedLabelDemo/TYAttributedLabel/TYTextContainer.m; sourceTree = "<group>"; };
+		9DCE56ED21290F4E3048A6BFFF3A1E6E /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+PureLayout.m"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
+		9DDCBCB569D461B64689D228ABAE9716 /* PureLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PureLayout.xcconfig; sourceTree = "<group>"; };
+		A06DE81BFA77B066415E5EB5391DB6DF /* WeiboSDK.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = WeiboSDK.bundle; path = UShareSDK/SocialLibraries/Sina/WeiboSDK.bundle; sourceTree = "<group>"; };
+		A3BA314EBBFE9924CDAD5D11C8FE1B75 /* WBHttpRequest+WeiboToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WBHttpRequest+WeiboToken.h"; path = "UShareSDK/SocialLibraries/Sina/WBHttpRequest+WeiboToken.h"; sourceTree = "<group>"; };
+		AD8FDC75305F46C7837E252AB36E2F7A /* WBSDKRelationshipButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBSDKRelationshipButton.h; path = UShareSDK/SocialLibraries/Sina/WBSDKRelationshipButton.h; sourceTree = "<group>"; };
+		AE0649191D2817A683372E56C70B2917 /* PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayout.h; path = PureLayout/PureLayout/PureLayout.h; sourceTree = "<group>"; };
+		B0B528C8172B7F52F912499DD04A43D0 /* libPods-UMeng.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-UMeng.a"; path = "libPods-UMeng.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA7E9F1A27FFC8DADC8D3C92620A6CC5 /* TYAttributedLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TYAttributedLabel.m; path = TYAttributedLabelDemo/TYAttributedLabel/TYAttributedLabel.m; sourceTree = "<group>"; };
+		BB2FC952FF6CD4DEA6AC63B4786B4FF4 /* TYImageStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYImageStorage.h; path = TYAttributedLabelDemo/TYAttributedLabel/TYImageStorage.h; sourceTree = "<group>"; };
+		BBF81DC4A2AC18C161198AFDB8FE378D /* TYImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TYImageCache.m; path = TYAttributedLabelDemo/TYAttributedLabel/TYImageCache.m; sourceTree = "<group>"; };
+		C4F45EDEE730A20838C32B7F93CB7BCF /* libSocialWeChat.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libSocialWeChat.a; path = UShareSDK/SocialLibraries/WeChat/libSocialWeChat.a; sourceTree = "<group>"; };
+		C85A430003952E880162A32BCE886D5C /* Pods-UMeng.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UMeng.release.xcconfig"; sourceTree = "<group>"; };
+		CA102D0890297D8B2FBD035673790AB5 /* WBSDKCommentButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBSDKCommentButton.h; path = UShareSDK/SocialLibraries/Sina/WBSDKCommentButton.h; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CFBB78CBFC210A1B2F38FCC6B78A7F8C /* TYImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYImageCache.h; path = TYAttributedLabelDemo/TYAttributedLabel/TYImageCache.h; sourceTree = "<group>"; };
+		D07A292D0622C52F94A343763D5D3B2B /* Pods-UMeng-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UMeng-acknowledgements.plist"; sourceTree = "<group>"; };
+		D2C764C984C1B74AACEC4A8DA1AEF9D4 /* UMSocialWechatHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMSocialWechatHandler.h; path = UShareSDK/SocialLibraries/WeChat/UMSocialWechatHandler.h; sourceTree = "<group>"; };
+		D5D2E638962CC9AAF3C04415AA57E8F6 /* ALView+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ALView+PureLayout.m"; path = "PureLayout/PureLayout/ALView+PureLayout.m"; sourceTree = "<group>"; };
+		D8FA1AE1A79F98854FEFEB4D1F2443C0 /* TYDrawStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYDrawStorage.h; path = TYAttributedLabelDemo/TYAttributedLabel/TYDrawStorage.h; sourceTree = "<group>"; };
+		DEC40764175E6A73AE4E83AB757A4495 /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TencentOpenApi_IOS_Bundle.bundle; path = UShareSDK/SocialLibraries/QQ/TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
+		E4AE1E189E8C2304E564D0B5E872383D /* ALView+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ALView+PureLayout.h"; path = "PureLayout/PureLayout/ALView+PureLayout.h"; sourceTree = "<group>"; };
+		E79E6DB0A6070C56F2A66533923021DA /* UMSocialSinaHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMSocialSinaHandler.h; path = UShareSDK/SocialLibraries/Sina/UMSocialSinaHandler.h; sourceTree = "<group>"; };
+		E9E886474A97BAA7877F454E2EDBBD8E /* UMSocialSDKResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = UMSocialSDKResources.bundle; path = UShareSDK/UMSocialUI/UMSocialSDKResources.bundle; sourceTree = "<group>"; };
+		F1735206F0AEE7D6ECB479D022449856 /* TYAttributedLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TYAttributedLabel.xcconfig; sourceTree = "<group>"; };
+		F372E12C17121A79E5BB1DBC833F805D /* libSocialSina.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libSocialSina.a; path = UShareSDK/SocialLibraries/Sina/libSocialSina.a; sourceTree = "<group>"; };
+		F7765E97761BFFDC99BE7B6C33419919 /* TYTextContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TYTextContainer.h; path = TYAttributedLabelDemo/TYAttributedLabel/TYTextContainer.h; sourceTree = "<group>"; };
+		F805F540BD6F200BCFFB006BD4E2C47D /* WechatAuthSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WechatAuthSDK.h; path = UShareSDK/SocialLibraries/WeChat/WechatAuthSDK.h; sourceTree = "<group>"; };
+		F9024DEF04696FE1B65E0B55ED14DC06 /* Pods-UMeng-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UMeng-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2292D359E5585A475AD4C5D0AB99E2E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B230049351797EB04265F7AB1AA9B76 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91EECC487B9E052477CCD3644B30AB9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				600E4917110D887A28442A4BD5851CF1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1A2CA390B0712079B906913B55BEBC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD10C128A745CADDA3589C269EF828A2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0882FB772DA2FF8939B49DF99478CD96 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				93D3C70A5E19884498ABFB0329DDA898 /* Frameworks */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		0D7D8ED35D2CF04FF84E26D719549669 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				707EC861E654A81801B0FDF8608FB267 /* libSocialQQ.a */,
+				2BDF4663A474B32FB76FBC093234B7DD /* TencentOpenAPI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A4B1CB1D55CC88AFA5450F1FA5B541F /* TYAttributedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				050A681271422AD8E13A6D2051E26363 /* NSMutableAttributedString+TY.h */,
+				5995E6ED875C09CF5CEEAAE5386C53AD /* NSMutableAttributedString+TY.m */,
+				7AC5EDB09DEBEF42D44349147AFC652C /* TYAttributedLabel.h */,
+				BA7E9F1A27FFC8DADC8D3C92620A6CC5 /* TYAttributedLabel.m */,
+				D8FA1AE1A79F98854FEFEB4D1F2443C0 /* TYDrawStorage.h */,
+				502C79E03F9441ED912D122AB08B541E /* TYDrawStorage.m */,
+				CFBB78CBFC210A1B2F38FCC6B78A7F8C /* TYImageCache.h */,
+				BBF81DC4A2AC18C161198AFDB8FE378D /* TYImageCache.m */,
+				BB2FC952FF6CD4DEA6AC63B4786B4FF4 /* TYImageStorage.h */,
+				09E8C873A538F7F771B8B5CC55540309 /* TYImageStorage.m */,
+				55513BA83B2D95EAEB4C5D0795110930 /* TYLinkTextStorage.h */,
+				9AF208891A3E0A81C1A9AC864CC1F844 /* TYLinkTextStorage.m */,
+				F7765E97761BFFDC99BE7B6C33419919 /* TYTextContainer.h */,
+				9D7294DD376C516EEE1AC483E83DE86C /* TYTextContainer.m */,
+				0348B04265310CB72CF2B47D90C969B1 /* TYTextContainer+Extended.m */,
+				38397FA2728276F21CFA48E30C885FE1 /* TYTextStorage.h */,
+				902E8623B1E107A899BDA20143A2C6C7 /* TYTextStorage.m */,
+				30B024C56C3AEA55C55DC962C0135BD3 /* TYTextStorageProtocol.h */,
+				1746EEE291BC9C709B2B3966985E2CED /* TYViewStorage.h */,
+				30B5D8B71D17855F65D9649386EEF966 /* TYViewStorage.m */,
+				BA70E0BCC9DAC12D0DE04697087EF663 /* Support Files */,
+			);
+			name = TYAttributedLabel;
+			path = TYAttributedLabel;
+			sourceTree = "<group>";
+		};
+		1F9250B8ED22A83231C5CA7117442A85 /* PureLayout */ = {
+			isa = PBXGroup;
+			children = (
+				E4AE1E189E8C2304E564D0B5E872383D /* ALView+PureLayout.h */,
+				D5D2E638962CC9AAF3C04415AA57E8F6 /* ALView+PureLayout.m */,
+				0FE82428193D62E193CEA97531B3E86C /* NSArray+PureLayout.h */,
+				297539EEB44491A363B706B353D3FBDA /* NSArray+PureLayout.m */,
+				6E691D8383E3F7C9A6EC5A64B563771E /* NSLayoutConstraint+PureLayout.h */,
+				9DCE56ED21290F4E3048A6BFFF3A1E6E /* NSLayoutConstraint+PureLayout.m */,
+				AE0649191D2817A683372E56C70B2917 /* PureLayout.h */,
+				854B7CF91D3B31AC8B728D27B9388DD6 /* PureLayout+Internal.h */,
+				3BC3BA5F9D14A9B2061D4D49A04878FD /* PureLayoutDefines.h */,
+				496F0F45C98A17A1EB78F01A89A238F8 /* Support Files */,
+			);
+			name = PureLayout;
+			path = PureLayout;
+			sourceTree = "<group>";
+		};
+		403BEE504C74F1499AB59F4DB0760E0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46B96BA483682BCC278D81B9B4447DEB /* UMSocialNetwork.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		496F0F45C98A17A1EB78F01A89A238F8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9DDCBCB569D461B64689D228ABAE9716 /* PureLayout.xcconfig */,
+				6F0186E8AED4A09D2335BFEF1B1D0FD4 /* PureLayout-dummy.m */,
+				52AE9A87E618A901FE651C1601BB59DB /* PureLayout-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PureLayout";
+			sourceTree = "<group>";
+		};
+		4997ECDED706E82173C53EBF7F1A522A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A06DE81BFA77B066415E5EB5391DB6DF /* WeiboSDK.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4E5A646DC8550758AF964908825C39CB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E9E886474A97BAA7877F454E2EDBBD8E /* UMSocialSDKResources.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5DC8A9A393406B2D7D17C79D2E221D92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0B528C8172B7F52F912499DD04A43D0 /* libPods-UMeng.a */,
+				487880009117F0DB27E821C7ECAFACC3 /* libPureLayout.a */,
+				526B8AE47E91A9A214F591765A67FA3D /* libTYAttributedLabel.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		60261DC85484F8BB48EEFE355DD10E85 /* Pods-UMeng */ = {
+			isa = PBXGroup;
+			children = (
+				5A7EA1A658DC48F31CF99501F2BCA7AC /* Pods-UMeng-acknowledgements.markdown */,
+				D07A292D0622C52F94A343763D5D3B2B /* Pods-UMeng-acknowledgements.plist */,
+				32007F94FE0B81AE3BDCCD213C81C9C6 /* Pods-UMeng-dummy.m */,
+				952DB751B02C1140399D014B3E9F954F /* Pods-UMeng-frameworks.sh */,
+				F9024DEF04696FE1B65E0B55ED14DC06 /* Pods-UMeng-resources.sh */,
+				6696D51CDA39D480A76CF53739B6797B /* Pods-UMeng.debug.xcconfig */,
+				C85A430003952E880162A32BCE886D5C /* Pods-UMeng.release.xcconfig */,
+			);
+			name = "Pods-UMeng";
+			path = "Target Support Files/Pods-UMeng";
+			sourceTree = "<group>";
+		};
+		6BE2772FC8F3040FB41C0BF58974D514 /* Sina */ = {
+			isa = PBXGroup;
+			children = (
+				E79E6DB0A6070C56F2A66533923021DA /* UMSocialSinaHandler.h */,
+				75A069DC5C731BD66FE2DD1F3F99F292 /* WBHttpRequest.h */,
+				88F8BE0B24287BECA629E939AEE1D149 /* WBHttpRequest+WeiboGame.h */,
+				7D4AD941368F76DE81A0D1BE3FCD21FB /* WBHttpRequest+WeiboShare.h */,
+				A3BA314EBBFE9924CDAD5D11C8FE1B75 /* WBHttpRequest+WeiboToken.h */,
+				806C47D2A28C0DD9C63B2BFDBC9FC437 /* WBHttpRequest+WeiboUser.h */,
+				26F36768BDBB02775478D35D8A3D3C9E /* WBSDKBasicButton.h */,
+				CA102D0890297D8B2FBD035673790AB5 /* WBSDKCommentButton.h */,
+				AD8FDC75305F46C7837E252AB36E2F7A /* WBSDKRelationshipButton.h */,
+				540024EBD6E27F47A7B4C0047AF3818F /* WeiboSDK.h */,
+				4AF68F2C0A45A9089A8E5905BD8CB855 /* WeiboSDK+Statistics.h */,
+				4022D940EE78A31D390CAEE052BC4B73 /* WeiboUser.h */,
+				979D173CC5FA7674F50A0F22C74E24FF /* Frameworks */,
+				4997ECDED706E82173C53EBF7F1A522A /* Resources */,
+			);
+			name = Sina;
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7801B45B069796C59035275AFBBB5A7A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				403BEE504C74F1499AB59F4DB0760E0C /* Frameworks */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		789E151A24679D5A38B5FEB295C401C2 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				60261DC85484F8BB48EEFE355DD10E85 /* Pods-UMeng */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7D55F1E4840B17AFF9D5C417D325F260 /* QQ */ = {
+			isa = PBXGroup;
+			children = (
+				149BF270B2396CDD80072BB753C4E54D /* UMSocialQQHandler.h */,
+				0D7D8ED35D2CF04FF84E26D719549669 /* Frameworks */,
+				92A705911122D32A3BCE6C404090BA7E /* Resources */,
+			);
+			name = QQ;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				D87CFDADE865D312E0AAD9B916AAB6A1 /* Pods */,
+				5DC8A9A393406B2D7D17C79D2E221D92 /* Products */,
+				789E151A24679D5A38B5FEB295C401C2 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		92A705911122D32A3BCE6C404090BA7E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DEC40764175E6A73AE4E83AB757A4495 /* TencentOpenApi_IOS_Bundle.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		93D3C70A5E19884498ABFB0329DDA898 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45256FCBCDAE9E8291D4800E2CC419DD /* UMSocialCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		979D173CC5FA7674F50A0F22C74E24FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F372E12C17121A79E5BB1DBC833F805D /* libSocialSina.a */,
+				20DEB198AD9D2ED5FA92D132F65A959D /* libWeiboSDK.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9FB9CCC709879F0FCDA0C4045D330D85 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				ACEF626CF1BA17C3C597AA248177A716 /* Frameworks */,
+				4E5A646DC8550758AF964908825C39CB /* Resources */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		A6EF54E7D5A193337FA5004D89C8596C /* UMengUShare */ = {
+			isa = PBXGroup;
+			children = (
+				0882FB772DA2FF8939B49DF99478CD96 /* Core */,
+				7801B45B069796C59035275AFBBB5A7A /* Network */,
+				D3183C8C3567125ADE815A50E9714C60 /* Social */,
+				9FB9CCC709879F0FCDA0C4045D330D85 /* UI */,
+			);
+			name = UMengUShare;
+			path = UMengUShare;
+			sourceTree = "<group>";
+		};
+		A772E2C648424B681F68547F26B6EAED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4F45EDEE730A20838C32B7F93CB7BCF /* libSocialWeChat.a */,
+				763BC4C0750114565BDC1DED4A3C0BD6 /* libWeChatSDK.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ACEF626CF1BA17C3C597AA248177A716 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6ABBBE167F5488E26D88D34797E14D5D /* UShareUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA70E0BCC9DAC12D0DE04697087EF663 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F1735206F0AEE7D6ECB479D022449856 /* TYAttributedLabel.xcconfig */,
+				53062B6B0CB276909B033859CAE24BBA /* TYAttributedLabel-dummy.m */,
+				7AD471BDB5B7B4979E84166B9BF34A76 /* TYAttributedLabel-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TYAttributedLabel";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3183C8C3567125ADE815A50E9714C60 /* Social */ = {
+			isa = PBXGroup;
+			children = (
+				7D55F1E4840B17AFF9D5C417D325F260 /* QQ */,
+				6BE2772FC8F3040FB41C0BF58974D514 /* Sina */,
+				EC132D762292A344E38ADB14394C3BE2 /* WeChat */,
+			);
+			name = Social;
+			sourceTree = "<group>";
+		};
+		D87CFDADE865D312E0AAD9B916AAB6A1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F9250B8ED22A83231C5CA7117442A85 /* PureLayout */,
+				1A4B1CB1D55CC88AFA5450F1FA5B541F /* TYAttributedLabel */,
+				A6EF54E7D5A193337FA5004D89C8596C /* UMengUShare */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EC132D762292A344E38ADB14394C3BE2 /* WeChat */ = {
+			isa = PBXGroup;
+			children = (
+				D2C764C984C1B74AACEC4A8DA1AEF9D4 /* UMSocialWechatHandler.h */,
+				F805F540BD6F200BCFFB006BD4E2C47D /* WechatAuthSDK.h */,
+				221A3ABE825F1EFB642588B0EBBB6370 /* WXApi.h */,
+				74D155F7EBE3C9E6C87E149AF7F2800A /* WXApiObject.h */,
+				A772E2C648424B681F68547F26B6EAED /* Frameworks */,
+			);
+			name = WeChat;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		00C03AD12D6962DF6BF42550D5068D46 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04D3CE71377608713C0A90DE8BC944B5 /* NSMutableAttributedString+TY.h in Headers */,
+				7D490F01B32147D498396516CDDB5706 /* TYAttributedLabel.h in Headers */,
+				29315789901A2C553403A2F1C03490EA /* TYDrawStorage.h in Headers */,
+				135590377E856B3F36B8E9C293DB1AD5 /* TYImageCache.h in Headers */,
+				9FED13E20781CE3CDFB52FF298510DF9 /* TYImageStorage.h in Headers */,
+				39BC01838891B26418C71D5135AB1C72 /* TYLinkTextStorage.h in Headers */,
+				D6BC5E13DCDEC40C74224E3561545A91 /* TYTextContainer.h in Headers */,
+				6FF827D353DD2452D1E03C9A2C65E9FF /* TYTextStorage.h in Headers */,
+				807E9FF4D310E17B52E6FA92BC3E0FBC /* TYTextStorageProtocol.h in Headers */,
+				CBB49A4D7FC14C363936D37E997972CC /* TYViewStorage.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F366B0164AB9ABF87200462606B87A5D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59928300769638A05B6DBCED5D00441E /* ALView+PureLayout.h in Headers */,
+				0B8F270F13A099128944B624E6D747DA /* NSArray+PureLayout.h in Headers */,
+				8A2700FCC93D8E9E6E7385A2C1CA622D /* NSLayoutConstraint+PureLayout.h in Headers */,
+				FFEBD5548FCA1877D012A5B96B344C2D /* PureLayout+Internal.h in Headers */,
+				91919F417D1BF743FFF05C0561354CFC /* PureLayout.h in Headers */,
+				9B8222C10D6D0B263F8C70B2ED117D10 /* PureLayoutDefines.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1A2E3BFDEDD0EFF660EC171ACB5F9E95 /* TYAttributedLabel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 256C59C2AF8E59A89CF68DB005A298B7 /* Build configuration list for PBXNativeTarget "TYAttributedLabel" */;
+			buildPhases = (
+				A36049463D734515AAC7515AA6B02719 /* Sources */,
+				E1A2CA390B0712079B906913B55BEBC3 /* Frameworks */,
+				00C03AD12D6962DF6BF42550D5068D46 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TYAttributedLabel;
+			productName = TYAttributedLabel;
+			productReference = 526B8AE47E91A9A214F591765A67FA3D /* libTYAttributedLabel.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D003C4C467802D7E32C33F869442C2B4 /* PureLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B674B6FDC10636493779759E1D5BA16 /* Build configuration list for PBXNativeTarget "PureLayout" */;
+			buildPhases = (
+				11297DD667787657D4ADF11B0CB40629 /* Sources */,
+				2292D359E5585A475AD4C5D0AB99E2E8 /* Frameworks */,
+				F366B0164AB9ABF87200462606B87A5D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PureLayout;
+			productName = PureLayout;
+			productReference = 487880009117F0DB27E821C7ECAFACC3 /* libPureLayout.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FD7BDC7A68DFA8AE402970AD11BC8047 /* Pods-UMeng */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B60B0BDCBF22DC1E6E86C7B357752CC /* Build configuration list for PBXNativeTarget "Pods-UMeng" */;
+			buildPhases = (
+				1E52E78D7B7A4875CD4FF9DE86FC0B05 /* Sources */,
+				91EECC487B9E052477CCD3644B30AB9B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CED4500B44AFBC333A255498168AA28 /* PBXTargetDependency */,
+				01E9C29C9CF7FE0FEE0EF066499495AF /* PBXTargetDependency */,
+			);
+			name = "Pods-UMeng";
+			productName = "Pods-UMeng";
+			productReference = B0B528C8172B7F52F912499DD04A43D0 /* libPods-UMeng.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 5DC8A9A393406B2D7D17C79D2E221D92 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD7BDC7A68DFA8AE402970AD11BC8047 /* Pods-UMeng */,
+				D003C4C467802D7E32C33F869442C2B4 /* PureLayout */,
+				1A2E3BFDEDD0EFF660EC171ACB5F9E95 /* TYAttributedLabel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11297DD667787657D4ADF11B0CB40629 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEB0D94B0A365133493AB2ACD58AD271 /* ALView+PureLayout.m in Sources */,
+				FD964A44123A3B63B53420799F280C64 /* NSArray+PureLayout.m in Sources */,
+				00331FA7E1E687B7A7835D7C723C444A /* NSLayoutConstraint+PureLayout.m in Sources */,
+				B20605EFF70D6D8B84116D6829A33E62 /* PureLayout-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E52E78D7B7A4875CD4FF9DE86FC0B05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BFA25C5FF5DD686A317E954608250CF /* Pods-UMeng-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A36049463D734515AAC7515AA6B02719 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5525052E44B9B4E3FAD5E808246219B1 /* NSMutableAttributedString+TY.m in Sources */,
+				33B94180319167899CE99D21193C29D5 /* TYAttributedLabel-dummy.m in Sources */,
+				ECDD6E5961E33AD627DC674ACAEF17C3 /* TYAttributedLabel.m in Sources */,
+				2C1EE6393B85BAA439B379F7F151C6F0 /* TYDrawStorage.m in Sources */,
+				5D9394FD0191A393AE8C1EBF5CADCD66 /* TYImageCache.m in Sources */,
+				C03C769F7E2D6712E546031E8AF88E0C /* TYImageStorage.m in Sources */,
+				F868C22554AEC60962015AF5BFD4EE7A /* TYLinkTextStorage.m in Sources */,
+				85541C9D3F2E1A1D28D6C47380B23F03 /* TYTextContainer+Extended.m in Sources */,
+				0B1567E94B1EB3FAD39238E355EFBFC5 /* TYTextContainer.m in Sources */,
+				28C61F70116932875DE10CBD4E24EEA6 /* TYTextStorage.m in Sources */,
+				64EE74EBD30DDAE081254A1CEDA98625 /* TYViewStorage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01E9C29C9CF7FE0FEE0EF066499495AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TYAttributedLabel;
+			target = 1A2E3BFDEDD0EFF660EC171ACB5F9E95 /* TYAttributedLabel */;
+			targetProxy = 60F9252BDBE5A7287C4E82A181870382 /* PBXContainerItemProxy */;
+		};
+		6CED4500B44AFBC333A255498168AA28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PureLayout;
+			target = D003C4C467802D7E32C33F869442C2B4 /* PureLayout */;
+			targetProxy = DD12D0E031A530B5FA1908B6A1604146 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2D8AF4A335E7B6CA3BDD7F4112176459 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DDCBCB569D461B64689D228ABAE9716 /* PureLayout.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PureLayout/PureLayout-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		47BEF9D903506B003EA5C2B249729489 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		68D8CBACA5E4A46008F8392DFF746470 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6696D51CDA39D480A76CF53739B6797B /* Pods-UMeng.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6EF4CB7CC2C52706FCFC51D2B52731DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C85A430003952E880162A32BCE886D5C /* Pods-UMeng.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		84BD951690AAAF0B460B996E91E790B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1735206F0AEE7D6ECB479D022449856 /* TYAttributedLabel.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TYAttributedLabel/TYAttributedLabel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		AAF678CED40D3499169D10F63CA0719E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D43170427387940F8F195C1B77580BF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DDCBCB569D461B64689D228ABAE9716 /* PureLayout.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PureLayout/PureLayout-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FF971EFEEAAC0F02B43C29A6729B62AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1735206F0AEE7D6ECB479D022449856 /* TYAttributedLabel.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TYAttributedLabel/TYAttributedLabel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		256C59C2AF8E59A89CF68DB005A298B7 /* Build configuration list for PBXNativeTarget "TYAttributedLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF971EFEEAAC0F02B43C29A6729B62AA /* Debug */,
+				84BD951690AAAF0B460B996E91E790B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47BEF9D903506B003EA5C2B249729489 /* Debug */,
+				AAF678CED40D3499169D10F63CA0719E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B60B0BDCBF22DC1E6E86C7B357752CC /* Build configuration list for PBXNativeTarget "Pods-UMeng" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68D8CBACA5E4A46008F8392DFF746470 /* Debug */,
+				6EF4CB7CC2C52706FCFC51D2B52731DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B674B6FDC10636493779759E1D5BA16 /* Build configuration list for PBXNativeTarget "PureLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D8AF4A335E7B6CA3BDD7F4112176459 /* Debug */,
+				D43170427387940F8F195C1B77580BF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
